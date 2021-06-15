@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sswitch Demo</title>
+	<link rel="stylesheet" href="dist/switchery.css" />
+	
+	<style type="text/css">
+		.switchery {
+background-color: #fff;
+border: 1px solid #dfdfdf;
+border-radius: 20px;
+cursor: pointer;
+display: inline-block;
+height: 30px;
+position: relative;
+vertical-align: middle;
+width: 50px;
+}
+.switchery > small {
+background: #fff;
+border-radius: 100%;
+box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4);
+height: 30px;
+position: absolute;
+top: 0;
+width: 30px;
+}
+	</style>
+</head>
+<body>
+	<input type="checkbox" class="js-switch" checked />
+
+</body>
+	<script src="dist/switchery.js"></script>
+	<script type="text/javascript">
+var Switchery = require('switchery');
+
+// if-else statement used only for fixing <IE9 issues
+if (Array.prototype.forEach) {
+var elems = Array.prototype.slice.call(document.querySelectorAll('.js-switch'));
+
+elems.forEach(function(html) {
+var switchery = new Switchery(html);
+});
+} else {
+var elems = document.querySelectorAll('.js-switch');
+
+for (var i = 0; i < elems.length; i++) {
+var switchery = new Switchery(elems[i]);
+}
+}
+</script>
+</html>

@@ -1,0 +1,51 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  width: 100%;
+}
+body {
+
+  color: #619bf9;
+ 
+}
+main {
+  -webkit-align-items: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  height: 100%;
+  -webkit-justify-content: center;
+  justify-content: center;
+  text-shadow: 3px 2px 0 #d8e7ff, 6px 5px 0 rgba(0, 0, 0, .15);
+  width: 100%;
+}
+main > div {
+  font-size: 3em;
+  text-align: center;
+}
+
+h1 {
+  font-size: .5em;
+  margin-bottom: .25em;
+  padding: .25em;
+}
+a {
+  color: #619bf9;
+  transition: ease .2s
+}
+a:hover {
+  color: #567dbc;
+}
+a span {
+  margin: .25em;
+}
+
+#clock {
+   text-align: center;
+   margin-top: 10%;
+   font-size: 50px;
+   font-family: Baskerville, Georgia;
+}
